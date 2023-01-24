@@ -2,65 +2,14 @@ import Image from "next/image";
 import hero from "../../../public/images/hero.webp";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
-import dairy from "../../../public/images/dairy.png";
-import veggies from "../../../public/images/veggies.png";
-import spices from "../../../public/images/spices.png";
-import snacks from "../../../public/images/snacks.png";
-import flour from "../../../public/images/flour.png";
-import meat from "../../../public/images/meat.png";
 import Link from "next/link";
-
-const creds = [
-    "Fresh Vegetables",
-    "100% Guarantee",
-    "Cash on Delivery",
-    "Fast Delivery",
-];
-
-const food_categories = [
-    {
-        name: "Dairy Products",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        image: dairy,
-    },
-    {
-        name: "Vegetables & Fruits",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        image: veggies,
-    },
-    {
-        name: "Fish & Meat",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        image: meat,
-    },
-    {
-        name: "Spices & Seasonings",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        image: spices,
-    },
-    {
-        name: "Snacks & Beverages",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        image: snacks,
-    },
-    {
-        name: "Flour & Baking",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        image: flour,
-    },
-];
+import { creds, food_categories } from "data";
 
 export const Hero = () => (
     <div className="flex flex-col items-center container mx-auto space-y-28 mt-12">
-        <div className="flex items-center space-x-14">
+        <div className="flex justify-between items-center space-x-14">
             {/*//!  Masthead  */}
-            <div className="flex flex-col space-y-12 w-[40%]">
+            <div className="flex flex-col space-y-14 w-[40%]">
                 {/*//! Heading */}
                 <h1 className="text-[2.8rem] font-extrabold leading-tight">
                     Fresh <span className="text-emerald-500">groceries</span>{" "}
@@ -75,6 +24,7 @@ export const Hero = () => (
                         className="px-6 py-3 outline-none w-full rounded-xl focus:outline-emerald-500 text-lg placeholder-gray-500"
                         placeholder="Search for products"
                     />
+
                     <button
                         type="submit"
                         className="cursor-pointer absolute right-4"

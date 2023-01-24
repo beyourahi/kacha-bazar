@@ -1,40 +1,14 @@
 import Link from "next/link";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsBag } from "react-icons/bs";
-
-const nav_menu = [
-    {
-        name: "Home",
-        link: "/",
-    },
-    {
-        name: "Shop",
-        link: "/shop",
-    },
-    {
-        name: "Offers",
-        link: "/offers",
-    },
-    {
-        name: "FAQ",
-        link: "/faq",
-    },
-    {
-        name: "About",
-        link: "/about",
-    },
-    {
-        name: "Contact",
-        link: "/contact",
-    },
-];
+import { nav_menu } from "data";
 
 export const Navbar = () => (
     <div className="sticky top-0 backdrop-blur-xl bg-transparent z-50">
         <div className="container flex items-center justify-between py-6 mx-auto">
             {/*//! Logo  */}
             <Link href="/">
-                <h1 className="text-2xl font-bold text-emerald-500">
+                <h1 className="text-[1.7rem] font-extrabold text-emerald-500">
                     Kacha{" "}
                     <span className="underline underline-offset-[10px]">
                         Baz
@@ -42,12 +16,13 @@ export const Navbar = () => (
                     ar
                 </h1>
             </Link>
+
             {/*//! Nav Menu  */}
             <ul className="flex justify-between space-x-12">
                 {nav_menu.map((item) => (
                     <li
                         key={item.name}
-                        className="text-base font-medium transition-all text-gray-800 hover:-translate-y-1 hover:text-emerald-500 hover:underline hover:underline-offset-[10px]"
+                        className="text-base font-semibold transition-all text-gray-700 hover:-translate-y-1 hover:text-emerald-500 hover:underline hover:underline-offset-[10px]"
                     >
                         <Link href={item.link}>{item.name}</Link>
                     </li>
