@@ -6,3 +6,18 @@
     outline-color: #10b981;
     outline-offset: 0.5srem;
 }
+
+*::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #10b981;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+}

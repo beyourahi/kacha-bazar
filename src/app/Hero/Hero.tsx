@@ -11,7 +11,7 @@ export const Hero = () => (
             {/*//!  Masthead  */}
             <div className="flex flex-col space-y-14 w-[40%]">
                 {/*//! Heading */}
-                <h1 className="text-[2.8rem] font-extrabold leading-tight">
+                <h1 className="text-[2.9rem] font-extrabold leading-tight">
                     Fresh <span className="text-emerald-500">groceries</span>{" "}
                     delivered straight to your door, shop now and{" "}
                     <span className="text-emerald-500">save time!</span>
