@@ -55,27 +55,23 @@ export const food_categories = [
 
 export const nav_menu = [
     {
-        name: "Home",
-        link: "/",
-    },
-    {
-        name: "Shop",
-        link: "/shop",
+        name: "Categories",
+        link: "#categories",
     },
     {
         name: "Offers",
-        link: "/offers",
+        link: "#offers",
     },
     {
         name: "FAQ",
-        link: "/faq",
+        link: "#faq",
     },
     {
         name: "About",
-        link: "/about",
+        link: "#about",
     },
     {
         name: "Contact",
-        link: "/contact",
+        link: "#contact",
     },
 ];
