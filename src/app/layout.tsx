@@ -2,6 +2,7 @@ import { LayoutProps } from "types";
 import "./globals.css";
 import { Navbar } from "./Navbar/Navbar";
 import { Raleway } from "@next/font/google";
+import { Footer } from "./Footer/Footer";
 
 //! If loading a variable font, you don't need to specify the font weight
 const raleway = Raleway({
@@ -14,6 +15,7 @@ const RootLayout = ({ children }: LayoutProps) => (
         <body className={`${raleway.className}`}>
             <Navbar />
             {children}
+            <Footer />
         </body>
     </html>
 );

@@ -1,44 +1,82 @@
 import Link from "next/link";
-import { FaShoppingCart } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
+import { BsBag } from "react-icons/bs";
+
+const nav_menu = [
+    {
+        name: "Home",
+        link: "/",
+    },
+    {
+        name: "Shop",
+        link: "/shop",
+    },
+    {
+        name: "Offers",
+        link: "/offers",
+    },
+    {
+        name: "FAQ",
+        link: "/faq",
+    },
+    {
+        name: "About",
+        link: "/about",
+    },
+    {
+        name: "Contact",
+        link: "/contact",
+    },
+];
 
 export const Navbar = () => (
-    <div className="container flex items-center justify-between py-8 mx-auto">
-        {/*//! Logo  */}
-        <Link href="/">
-            <h1 className="text-2xl font-bold text-emerald-500">
-                Kacha Bazar
-            </h1>
-        </Link>
+    <div className="sticky top-0 backdrop-blur-xl bg-transparent z-50">
+        <div className="container flex items-center justify-between py-6 mx-auto">
+            {/*//! Logo  */}
+            <Link href="/">
+                <h1 className="text-2xl font-bold text-emerald-500">
+                    Kacha{" "}
+                    <span className="underline underline-offset-[10px]">
+                        Baz
+                    </span>
+                    ar
+                </h1>
+            </Link>
+            {/*//! Nav Menu  */}
+            <ul className="flex justify-between space-x-12">
+                {nav_menu.map((item) => (
+                    <li
+                        key={item.name}
+                        className="text-base font-medium transition-all text-gray-800 hover:-translate-y-1 hover:text-emerald-500 hover:underline hover:underline-offset-[10px]"
+                    >
+                        <Link href={item.link}>{item.name}</Link>
+                    </li>
+                ))}
+            </ul>
 
-        {/*//! Nav Menu  */}
-        <ul className="flex justify-between space-x-10">
-            <li>
-                <Link href="/">Home</Link>
-            </li>
+            <div className="flex space-x-4">
+                {/*//! Cart Button */}
+                <Link
+                    href="/cart"
+                    className="flex justify-between items-center space-x-3 px-6 py-3 text-base font-bold tracking-wider text-center transition-all ease-in rounded-lg cursor-pointer text-gray-800 bg-gray-100 hover:bg-gray-300"
+                >
+                    <span className="text-xl">
+                        <BsBag />
+                    </span>
+                    <span>Cart</span>
+                </Link>
 
-            <li>
-                <a href="/">Product Categories</a>
-            </li>
-
-            <li>
-                <Link href="/offers">Offers</Link>
-            </li>
-
-            <li>
-                <Link href="/about">About Us</Link>
-            </li>
-
-            <li>
-                <Link href="/contact">Contact Us</Link>
-            </li>
-        </ul>
-
-        {/*//! Buttons */}
-        <Link href="/cart" className="flex items-center space-x-3">
-            <span className="text-2xl text-emerald-500">
-                <FaShoppingCart />
-            </span>
-            <span>Cart</span>
-        </Link>
+                {/*//! Visit Shop Button  */}
+                <Link
+                    href="/shop"
+                    className="flex justify-between items-center space-x-3 px-6 py-3 text-base font-bold tracking-wider text-center transition-all ease-in rounded-lg cursor-pointer text-white bg-emerald-500 hover:bg-emerald-600"
+                >
+                    <span className="text-xl">
+                        <FiShoppingCart />
+                    </span>
+                    <span>Visit Shop</span>
+                </Link>
+            </div>
+        </div>
     </div>
 );

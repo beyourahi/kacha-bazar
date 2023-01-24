@@ -2,7 +2,7 @@ import { Hero } from "./Hero/Hero";
 
 const Home = () => (
     <div>
-        <Hero />    
+        <Hero />
     </div>
 );
 
