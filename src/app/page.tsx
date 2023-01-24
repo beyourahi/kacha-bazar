@@ -1,15 +1,15 @@
+import { FAQ } from "./FAQ/FAQ";
 import { Hero } from "./Hero/Hero";
 import { ProductCategories } from "./ProductCategories/ProductCategories";
-import { VisitShopButton } from "./utils/VisitShopButton";
+import { ShopNowButton } from "./utils/ShopNowButton";
 
 const Home = () => (
-    <div className="flex flex-col items-center container mx-auto">
+    <main className="container flex flex-col items-center mx-auto just">
         <Hero />
-
         <ProductCategories />
-
-        <VisitShopButton />
-    </div>
+        <ShopNowButton />
+        <FAQ />
+    </main>
 );
 
 export default Home;

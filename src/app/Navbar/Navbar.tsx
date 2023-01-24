@@ -1,10 +1,10 @@
-import { VisitShopButton } from "../utils/VisitShopButton";
 import { CartButton } from "../utils/CartButton";
+import { ShopNowButton } from "../utils/ShopNowButton";
 import { Logo } from "./Logo";
 import { NavMenu } from "./NavMenu";
 
 export const Navbar = () => (
-    <div className="sticky top-0 backdrop-blur-xl bg-transparent z-50">
+    <div className="sticky top-0 z-50 bg-transparent backdrop-blur-xl">
         <div className="container flex items-center justify-between py-4 mx-auto">
             {/*//! Logo  */}
             <Logo />
@@ -17,7 +17,7 @@ export const Navbar = () => (
                 <CartButton />
 
                 {/*//! Visit Shop Button  */}
-                <VisitShopButton />
+                <ShopNowButton />
             </div>
         </div>
     </div>

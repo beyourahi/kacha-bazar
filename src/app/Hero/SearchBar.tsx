@@ -1,14 +1,14 @@
 import { FiSearch } from "react-icons/fi";
 
 export const SearchBar = () => (
-    <form className="flex justify-center items-center space-x-2 rounded-xl shadow-md shadow-gray-300 w-full relative">
+    <form className="relative flex items-center justify-center w-full space-x-2 drop-shadow-xl rounded-xl">
         <input
             type="text"
-            className="px-6 py-3 outline-none w-full rounded-xl focus:outline-emerald-500 text-lg placeholder-gray-500"
+            className="w-full px-6 py-3 text-lg placeholder-gray-500 outline-none rounded-xl focus:outline-2 focus:outline-emerald-500"
             placeholder="Search for products"
         />
 
-        <button type="submit" className="cursor-pointer absolute right-4">
+        <button type="submit" className="absolute cursor-pointer right-4">
             <FiSearch className="h-7 w-7 text-emerald-500" />
         </button>
     </form>
