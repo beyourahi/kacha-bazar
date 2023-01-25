@@ -6,9 +6,9 @@ import { faqs } from "data";
 import Image from "next/image";
 
 export const FAQ = () => (
-    <div
+    <section
         id="faq"
-        className="flex flex-col items-center w-full py-40 text-center"
+        className="flex flex-col items-center w-full py-32 text-center"
     >
         {/*//!  Headings  */}
         <div>
@@ -34,6 +34,7 @@ export const FAQ = () => (
             </h1>
         </div>
 
+        {/*//! FAQ Section  */}
         <div className="flex justify-between w-full h-full space-x-12">
             <Image
                 width={200}
@@ -85,5 +86,5 @@ export const FAQ = () => (
                 ))}
             </div>
         </div>
-    </div>
+    </section>
 );

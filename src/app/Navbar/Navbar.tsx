@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 import { NavMenu } from "./NavMenu";
 
 export const Navbar = () => (
-    <div className="sticky top-0 z-50 bg-transparent backdrop-blur-xl">
+    <div className="sticky top-0 z-50 bg-white/10 backdrop-blur-2xl">
         <div className="container flex items-center justify-between py-4 mx-auto">
             {/*//! Logo  */}
             <Logo />

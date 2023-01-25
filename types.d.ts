@@ -3,8 +3,8 @@ export interface LayoutProps {
 }
 
 export interface ButtonProps {
-    target: string;
-    styles: string;
-    icon: JSX.Element;
+    target?: string;
+    styles?: string;
+    icon?: JSX.Element;
     children: string;
 }
