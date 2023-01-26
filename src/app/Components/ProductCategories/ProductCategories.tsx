@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export const ProductCategories = () => (
     <section id="categories" className="py-32">
-        <div className="flex justify-between items-center">
+        <div className="container flex items-center justify-between mx-auto">
             {food_categories.map((category) => (
-                <div key={category.name} className="space-y-6 px-8">
+                <div key={category.name} className="px-8 space-y-6">
                     <Image src={category.image} alt={category.name} />
 
                     <div className="space-y-2">

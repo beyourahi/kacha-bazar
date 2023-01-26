@@ -5,7 +5,7 @@ import { Heading } from "./Heading";
 import Image from "next/image";
 
 export const Hero = () => (
-    <section className="flex items-center justify-between mt-12 space-x-14">
+    <section className="container flex items-center justify-between mx-auto mt-12 space-x-14">
         <div className="flex flex-col space-y-14 w-[40%]">
             <Heading />
             <div className="relative">

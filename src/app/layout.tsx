@@ -1,8 +1,8 @@
-import { LayoutProps } from "types";
 import "./globals.css";
-import { Navbar } from "./Navbar/Navbar";
+import { LayoutProps } from "types";
 import { Raleway } from "@next/font/google";
-import { Footer } from "./Footer/Footer";
+import { Navbar } from "@src/app/Components/Navbar/Navbar";
+import { Footer } from "@src/app/Components/Footer/Footer";
 
 //! If loading a variable font, you don't need to specify the font weight
 const raleway = Raleway({

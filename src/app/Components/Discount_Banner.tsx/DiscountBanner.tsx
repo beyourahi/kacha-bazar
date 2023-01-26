@@ -1,8 +1,8 @@
-import { ShopNowButton } from "../utils/ShopNowButton";
+import { ShopNowButton } from "@src/app/Utils/ShopNowButton";
 
 export const DiscountBanner = () => (
     <section
-        className="flex flex-col items-center justify-center w-full py-32 my-12 space-y-12"
+        className="container flex flex-col items-center justify-center w-full py-32 mx-auto my-12 space-y-12"
         style={{
             backgroundImage: "url(/images/discount_bg.png)",
             backgroundRepeat: "no-repeat",

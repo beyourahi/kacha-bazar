@@ -1,4 +1,4 @@
-import { Logo } from "../Navbar/Logo";
+import { Logo } from "@src/app/Components/Navbar/Logo";
 import {
     FaFacebookSquare,
     FaInstagramSquare,
@@ -7,7 +7,6 @@ import {
     FaEnvelope,
 } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
-import Link from "next/link";
 
 const year = new Date().getFullYear();
 

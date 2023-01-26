@@ -1,5 +1,5 @@
-import { CartButton } from "../utils/CartButton";
-import { ShopNowButton } from "../utils/ShopNowButton";
+import { CartButton } from "@src/app/Utils/CartButton";
+import { ShopNowButton } from "@src/app/Utils/ShopNowButton";
 import { Logo } from "./Logo";
 import { NavMenu } from "./NavMenu";
 

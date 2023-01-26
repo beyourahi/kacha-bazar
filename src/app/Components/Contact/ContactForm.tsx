@@ -1,4 +1,4 @@
-import { Button } from "../utils/Button";
+import { Button } from "@src/app/Utils/Button";
 
 export const ContactForm = () => (
     <div className="w-[50%]">

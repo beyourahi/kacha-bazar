@@ -2,9 +2,9 @@ import { ContactForm } from "./ContactForm";
 import Image from "next/image";
 
 export const Contact = () => (
-    <div
+    <section
         id="contact"
-        className="flex flex-col items-center justify-center w-full py-20 text-center"
+        className="container flex flex-col items-center justify-center w-full py-20 mx-auto text-center"
     >
         {/*//!  Headings  */}
         <div>
@@ -28,5 +28,5 @@ export const Contact = () => (
             />
             <ContactForm />
         </div>
-    </div>
+    </section>
 );

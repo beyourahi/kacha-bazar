@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hero from "../../../public/images/hero.webp";
+import hero from "@public/images/hero.webp";
 
 export const HeroImage = () => (
     <div className="w-[60%]">
