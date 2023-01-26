@@ -8,7 +8,7 @@ import Image from "next/image";
 export const FAQ = () => (
     <section
         id="faq"
-        className="flex flex-col items-center w-full py-32 text-center bg-gray-100"
+        className="flex flex-col items-center w-full py-32 text-center"
     >
         <div className="container mx-auto">
             {/*//!  Headings  */}
@@ -46,7 +46,7 @@ export const FAQ = () => (
                 />
 
                 {/*//! FAQs  */}
-                <div className="w-[55%] p-2 mx-auto bg-gray-100 space-y-4 divide-y-2 divide-gray-200">
+                <div className="w-[55%] p-2 mx-auto space-y-4 divide-y-2 divide-gray-200">
                     {faqs.map((faq) => (
                         <Disclosure
                             key={faq.question}

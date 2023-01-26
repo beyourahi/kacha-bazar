@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Contact = () => (
     <section
         id="contact"
-        className="container flex flex-col items-center justify-center w-full py-20 mx-auto text-center"
+        className="container flex flex-col items-center justify-center w-full py-32 mx-auto text-center"
     >
         {/*//!  Headings  */}
         <div>

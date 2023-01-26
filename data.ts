@@ -66,10 +66,10 @@ export const nav_menu = [
         name: "FAQ",
         link: "#faq",
     },
-    {
-        name: "About",
-        link: "#about",
-    },
+    // {
+    //     name: "About",
+    //     link: "#about",
+    // },
     {
         name: "Contact",
         link: "#contact",

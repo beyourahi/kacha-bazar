@@ -11,9 +11,9 @@ import { MdLocationOn } from "react-icons/md";
 const year = new Date().getFullYear();
 
 export const Footer = () => (
-    <footer className="bg-gray-100 mt-60">
+    <footer className="bg-gray-100 mt-44">
         <div className="container mx-auto divide-y-2 divide-gray-300">
-            <div className="flex justify-center space-x-24 py-28">
+            <div className="flex justify-center py-32 space-x-24">
                 {/*//! Branding  */}
                 <div className="flex flex-col space-y-8">
                     <Logo />
@@ -102,7 +102,7 @@ export const Footer = () => (
                 </div>
             </div>
 
-            <div className="py-6 text-center">
+            <div className="py-8 text-center">
                 <h4 className="text-sm font-semibold text-gray-600">
                     All Rights Reserved &copy; Kacha Bazer {year}
                 </h4>
