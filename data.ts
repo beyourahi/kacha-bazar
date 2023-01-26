@@ -59,6 +59,10 @@ export const nav_menu = [
         link: "#categories",
     },
     {
+        name: "Features",
+        link: "#features",
+    },
+    {
         name: "FAQ",
         link: "#faq",
     },

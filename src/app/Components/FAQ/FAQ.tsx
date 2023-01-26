@@ -59,14 +59,15 @@ export const FAQ = () => (
                                         <span className="font-bold">
                                             {faq.question}
                                         </span>
-
-                                        <ChevronDownIcon
-                                            className={`${
-                                                open
-                                                    ? "rotate-180 transform transition-all duration-300"
-                                                    : ""
-                                            } h-7 w-7 text-emerald-500 transition-all duration-300 bg-emerald-50 rounded-full`}
-                                        />
+                                        <div className="p-1 rounded-full bg-emerald-100">
+                                            <ChevronDownIcon
+                                                className={`${
+                                                    open
+                                                        ? "rotate-180 transform transition-all duration-300"
+                                                        : ""
+                                                } h-7 w-7 text-emerald-600 transition-all duration-300`}
+                                            />
+                                        </div>
                                     </Disclosure.Button>
 
                                     <Transition

@@ -13,7 +13,7 @@ const year = new Date().getFullYear();
 export const Footer = () => (
     <footer className="bg-gray-100 mt-60">
         <div className="container mx-auto divide-y-2 divide-gray-300">
-            <div className="flex py-28 justify-center space-x-24">
+            <div className="flex justify-center space-x-24 py-28">
                 {/*//! Branding  */}
                 <div className="flex flex-col space-y-8">
                     <Logo />
@@ -25,15 +25,15 @@ export const Footer = () => (
                         <div className="flex space-x-6">
                             <FaFacebookSquare
                                 size={40}
-                                className="text-emerald-500 hover:text-emerald-600 transition-all duration-300"
+                                className="transition-all duration-300 text-emerald-500 hover:text-emerald-600"
                             />
                             <FaInstagramSquare
                                 size={40}
-                                className="text-emerald-500 hover:text-emerald-600 transition-all duration-300"
+                                className="transition-all duration-300 text-emerald-500 hover:text-emerald-600"
                             />
                             <FaTwitterSquare
                                 size={40}
-                                className="text-emerald-500 hover:text-emerald-600 transition-all duration-300"
+                                className="transition-all duration-300 text-emerald-500 hover:text-emerald-600"
                             />
                         </div>
                     </div>
@@ -102,8 +102,8 @@ export const Footer = () => (
                 </div>
             </div>
 
-            <div className="text-center py-6">
-                <h4 className="text-sm font-semibold">
+            <div className="py-6 text-center">
+                <h4 className="text-sm font-semibold text-gray-600">
                     All Rights Reserved &copy; Kacha Bazer {year}
                 </h4>
             </div>
