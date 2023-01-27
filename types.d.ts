@@ -11,3 +11,16 @@ export interface ButtonProps extends Children {
     styles?: string;
     icon?: JSX.Element;
 }
+
+interface Product {
+    id: number;
+    name: string;
+    image: string;
+    actualPrice: number;
+    discountedPrice: number;
+    stockStatus: boolean;
+}
+
+export interface ProductCardProps {
+    product: Product;
+}
