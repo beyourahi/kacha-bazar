@@ -28,7 +28,7 @@ export const Features = () => (
             <div className="flex items-center justify-between space-x-24 px-28">
                 <div className="flex flex-col items-start space-y-6">
                     <h1 className="text-[2.5rem] font-bold leading-snug">
-                        Affordable groceries delivered directly to your door
+                        Affordable and Fresh Groceries Delivered Directly to Your Door
                     </h1>
                     <p className="text-2xl text-gray-600">
                         We offer the highest quality groceries at the best
@@ -61,7 +61,7 @@ export const Features = () => (
                 />
                 <div className="flex flex-col items-start space-y-6">
                     <h1 className="text-[2.5rem] font-bold leading-snug">
-                        Find Favorites And Discover New Ones
+                        Find Favorites and Discover New Ones
                     </h1>
                     <p className="text-2xl text-gray-600">
                         Taste thoughtfully curated and delicious foods.

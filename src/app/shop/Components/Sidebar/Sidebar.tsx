@@ -15,7 +15,7 @@ const categories = [
 ];
 
 export const Sidebar = () => (
-    <section className="flex flex-col w-[20%] h-full overflow-hidden pl-12 py-8">
+    <section className="flex flex-col w-[20%] h-full overflow-hidden py-8">
         {/*//! Logo */}
         <Logo />
 
