@@ -7,6 +7,7 @@ import {
     FaEnvelope,
 } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
+import { AuthorSignature } from "./AuthorSignature";
 
 const year = new Date().getFullYear();
 
@@ -102,10 +103,12 @@ export const Footer = () => (
                 </div>
             </div>
 
-            <div className="py-8 text-center">
-                <h4 className="text-sm font-semibold text-gray-600">
+            <div className="flex justify-between py-8">
+                <h4 className="text-sm font-semibold tracking-wide text-gray-500">
                     All Rights Reserved &copy; Kacha Bazer {year}
                 </h4>
+
+                <AuthorSignature />
             </div>
         </div>
     </footer>

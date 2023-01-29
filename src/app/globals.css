@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    outline-color: #10b981;
+    outline-color: white;
     outline-offset: 0.5srem;
 }
 
@@ -13,7 +13,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #10b981;
+    background-color: white;
     border-radius: 10px;
 }
 
