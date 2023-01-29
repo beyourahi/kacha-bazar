@@ -15,7 +15,7 @@ const categories = [
 ];
 
 export const Sidebar = () => (
-    <section className="flex flex-col w-[20%] h-full overflow-hidden pl-12 py-8">
+    <section className="flex flex-col w-[20%] h-full overflow-hidden p-8">
         {/*//! Logo */}
         <Logo />
 
@@ -28,7 +28,7 @@ export const Sidebar = () => (
                     <a
                         href="#"
                         key={category}
-                        className="px-4 py-3 tracking-wide transition-all duration-300 ease-in-out hover:text-white rounded-xl hover:bg-emerald-500"
+                        className="px-4 py-3 tracking-wide transition-all duration-300 ease-in-out hover:font-bold rounded-xl hover:bg-emerald-500 hover:text-white"
                     >
                         {category}
                     </a>

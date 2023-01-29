@@ -1,24 +1,29 @@
-import { CartButton } from "@src/app/Utils/CartButton";
-import { ShopNowButton } from "@src/app/Utils/ShopNowButton";
+"use client";
+
+import { useScrollPosition } from "@src/app/Hooks";
+import { ShopNowButton } from "../Buttons/ShopNowButton";
 import { Logo } from "./Logo";
 import { NavMenu } from "./NavMenu";
 
-export const Navbar = () => (
-    <div className="sticky top-0 z-50 bg-white/10 backdrop-blur-2xl">
-        <div className="container flex items-center justify-between py-8 mx-auto">
-            {/*//! Logo  */}
-            <Logo />
+export const Navbar = () => {
+    const pos = useScrollPosition();
 
-            {/*//! Nav Menu  */}
-            <NavMenu />
+    return (
+        <div
+            className={`sticky top-0 z-50 bg-white transition-all duration-500 ${
+                pos > 0 ? "shadow-2xl py-4" : "py-10"
+            }`}
+        >
+            <div className="container flex items-center justify-between mx-auto">
+                {/*//! Logo  */}
+                <Logo />
 
-            <div className="flex space-x-4">
-                {/*//! Cart Button */}
-                <CartButton />
+                {/*//! Nav Menu  */}
+                <NavMenu />
 
                 {/*//! Visit Shop Button  */}
                 <ShopNowButton />
             </div>
         </div>
-    </div>
-);
+    );
+};

@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import { ChevronUpDownIcon } from "@heroicons/react/20/solid";
 
 const sort_list = [
     { name: "Relevance" },
@@ -16,10 +16,10 @@ export const SortBy = () => {
     const [selected, setSelected] = useState(sort_list[0]);
 
     return (
-        <div className="z-40 w-[15%]">
+        <div className="z-40 w-[15%] cursor-pointer">
             <Listbox value={selected} onChange={setSelected}>
                 <div className="relative mt-1">
-                    <Listbox.Button className="relative w-full py-2 pl-6 pr-10 text-base text-left bg-white border cursor-default rounded-xl drop-shadow-xl">
+                    <Listbox.Button className="relative w-full py-2 pl-6 pr-10 text-base text-left bg-white border cursor-pointer rounded-xl drop-shadow-xl">
                         <span className="block truncate">{selected.name}</span>
                         <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                             <ChevronUpDownIcon
@@ -34,7 +34,7 @@ export const SortBy = () => {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <Listbox.Options className="absolute w-full py-1 mt-2 overflow-auto text-base bg-white shadow-lg rounded-xl max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <Listbox.Options className="absolute w-full py-1 mt-2 overflow-auto text-base bg-white shadow-lg cursor-pointer rounded-xl max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none">
                             {sort_list.map((item, index) => (
                                 <Listbox.Option
                                     key={index}
