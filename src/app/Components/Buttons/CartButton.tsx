@@ -11,7 +11,7 @@ export const CartButton = () => (
     <Button target="#" styles={`${buttonStyles} relative`} icon={<BsBag />}>
         <span>Cart</span>
         {items > 0 && (
-            <span className="px-2.5 py-[3px] ml-2 text-white rounded-full bg-emerald-500 absolute -top-[30%] -right-[10%] border-4 border-white">
+            <span className="px-2.5 py-[3px] ml-2 text-white rounded-full bg-emerald-500 absolute -top-[20%] -right-[10%] border-4 border-white">
                 {items}
             </span>
         )}

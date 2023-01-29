@@ -28,7 +28,7 @@ export const Sidebar = () => (
                     <a
                         href="#"
                         key={category}
-                        className="px-4 py-3 tracking-wide transition-all duration-300 ease-in-out hover:text-white rounded-xl hover:bg-emerald-500"
+                        className="px-4 py-3 tracking-wide transition-all duration-300 ease-in-out hover:font-bold rounded-xl hover:bg-emerald-500 hover:text-white"
                     >
                         {category}
                     </a>

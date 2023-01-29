@@ -1,4 +1,4 @@
-import { Button } from "@src/app/Utils/Button";
+import { Button } from "@src/app/Components";
 import Image from "next/image";
 import { FiShoppingCart } from "react-icons/fi";
 
