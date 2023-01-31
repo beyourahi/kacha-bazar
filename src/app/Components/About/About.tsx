@@ -1,7 +1,7 @@
 export const About = () => (
     <section
         id="about"
-        className="container flex items-center justify-center w-full py-32 mx-auto text-center bg-red-800"
+        className="container mx-auto flex w-full items-center justify-center bg-red-800 py-32 text-center"
     >
         {/*//!  Headings  */}
         <div>

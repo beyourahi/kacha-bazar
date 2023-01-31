@@ -2,20 +2,20 @@ import { Button } from "../Buttons/Button";
 
 export const ContactForm = () => (
     <div className="w-[50%]">
-        <form className="flex flex-col h-full space-y-4 text-center">
+        <form className="flex h-full flex-col space-y-4 text-center">
             <input
                 type="text"
                 placeholder="Name"
                 name="name"
                 required
-                className="p-4 text-base font-normal text-black transition-all ease-in bg-gray-100 rounded-lg outline-none md:text-lg focus:outline-emerald-500 focus:outline-offset-0 focus:outline-2 focus:rounded-lg placeholder:text-gray-800"
+                className="rounded-lg bg-gray-100 p-4 text-base font-normal text-black outline-none transition-all ease-in placeholder:text-gray-800 focus:rounded-lg focus:outline-2 focus:outline-offset-0 focus:outline-emerald-500 md:text-lg"
             />
 
             <input
                 type="email"
                 placeholder="Email"
                 name="email"
-                className="p-4 text-base font-normal text-black transition-all ease-in bg-gray-100 border-none rounded-lg outline-none md:text-lg focus:outline-emerald-500 focus:outline-offset-0 focus:outline-2 focus:rounded-lg placeholder:text-gray-800"
+                className="rounded-lg border-none bg-gray-100 p-4 text-base font-normal text-black outline-none transition-all ease-in placeholder:text-gray-800 focus:rounded-lg focus:outline-2 focus:outline-offset-0 focus:outline-emerald-500 md:text-lg"
             />
 
             <input
@@ -23,7 +23,7 @@ export const ContactForm = () => (
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="p-4 text-base font-normal text-black transition-all ease-in bg-gray-100 border-none rounded-lg outline-none md:text-lg focus:outline-emerald-500 focus:outline-offset-0 focus:outline-2 focus:rounded-lg placeholder:text-gray-800"
+                className="rounded-lg border-none bg-gray-100 p-4 text-base font-normal text-black outline-none transition-all ease-in placeholder:text-gray-800 focus:rounded-lg focus:outline-2 focus:outline-offset-0 focus:outline-emerald-500 md:text-lg"
             />
 
             <textarea
@@ -31,7 +31,7 @@ export const ContactForm = () => (
                 placeholder="Write your message..."
                 name="message"
                 required
-                className="col-span-2 row-span-3 p-4 text-base font-normal text-black transition-all ease-in bg-gray-100 border-none rounded-lg outline-none resize-none font-ps md:text-lg focus:outline-emerald-500 focus:outline-offset-0 focus:outline-2 focus:rounded-lg placeholder:text-gray-800"
+                className="font-ps col-span-2 row-span-3 resize-none rounded-lg border-none bg-gray-100 p-4 text-base font-normal text-black outline-none transition-all ease-in placeholder:text-gray-800 focus:rounded-lg focus:outline-2 focus:outline-offset-0 focus:outline-emerald-500 md:text-lg"
             />
 
             <Button styles="bg-emerald-500 hover:bg-emerald-600 text-white">

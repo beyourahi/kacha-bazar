@@ -1,7 +1,7 @@
 import { ShopNowButton } from "@src/app/Components";
 
 export const DiscountBanner = () => (
-    <section className="flex flex-col items-center justify-center w-full space-y-12 py-52 py bg-[url('/images/discount_bg.png')] bg-no-repeat bg-cover bg-center container mx-auto rounded-[3rem]">
+    <section className="py container mx-auto flex w-full flex-col items-center justify-center space-y-12 rounded-[3rem] bg-[url('/images/discount_bg.png')] bg-cover bg-center bg-no-repeat py-52">
         <h1 className="text-5xl font-bold">
             Get 50% off on your first 2 orders!{" "}
         </h1>

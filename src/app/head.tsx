@@ -1,4 +1,4 @@
-import {brand_name} from "data";
+import { brand_name } from "data";
 
 const Head = () => (
     <>

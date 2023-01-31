@@ -8,7 +8,7 @@ import Image from "next/image";
 export const FAQ = () => (
     <section
         id="faq"
-        className="flex flex-col items-center w-full py-32 text-center"
+        className="flex w-full flex-col items-center py-32 text-center"
     >
         <div className="container mx-auto">
             {/*//!  Headings  */}
@@ -20,15 +20,15 @@ export const FAQ = () => (
 
                 {/*//! Heading  */}
                 <h1 className="mb-20 text-[2.9rem] font-bold">
-                    <span className="underline underline-offset-[10px] decoration-emerald-500">
+                    <span className="underline decoration-emerald-500 underline-offset-[10px]">
                         F
                     </span>
                     requently{" "}
-                    <span className="underline underline-offset-[10px] decoration-emerald-500">
+                    <span className="underline decoration-emerald-500 underline-offset-[10px]">
                         A
                     </span>
                     sked{" "}
-                    <span className="underline underline-offset-[10px] decoration-emerald-500">
+                    <span className="underline decoration-emerald-500 underline-offset-[10px]">
                         Q
                     </span>
                     uestions
@@ -36,7 +36,7 @@ export const FAQ = () => (
             </div>
 
             {/*//! FAQ Section  */}
-            <div className="flex justify-between w-full h-full space-x-12">
+            <div className="flex h-full w-full justify-between space-x-12">
                 <Image
                     width={200}
                     height={200}
@@ -46,7 +46,7 @@ export const FAQ = () => (
                 />
 
                 {/*//! FAQs  */}
-                <div className="w-[55%] p-2 mx-auto space-y-4 divide-y-2 divide-gray-200">
+                <div className="mx-auto w-[55%] space-y-4 divide-y-2 divide-gray-200 p-2">
                     {faqs.map((faq) => (
                         <Disclosure
                             key={faq.question}
@@ -55,11 +55,11 @@ export const FAQ = () => (
                         >
                             {({ open }) => (
                                 <>
-                                    <Disclosure.Button className="flex justify-between w-full px-8 py-6 text-lg font-medium text-left text-black transition-all">
+                                    <Disclosure.Button className="flex w-full justify-between px-8 py-6 text-left text-lg font-medium text-black transition-all">
                                         <span className="font-bold">
                                             {faq.question}
                                         </span>
-                                        <div className="p-1 rounded-full bg-emerald-100">
+                                        <div className="rounded-full bg-emerald-100 p-1">
                                             <ChevronDownIcon
                                                 className={`${
                                                     open
@@ -78,7 +78,7 @@ export const FAQ = () => (
                                         leaveFrom="transform scale-100 opacity-100"
                                         leaveTo="transform scale-95 opacity-0"
                                     >
-                                        <Disclosure.Panel className="px-8 py-3 text-base text-left">
+                                        <Disclosure.Panel className="px-8 py-3 text-left text-base">
                                             {faq.answer}
                                         </Disclosure.Panel>
                                     </Transition>

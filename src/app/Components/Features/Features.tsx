@@ -5,7 +5,7 @@ import { FiShoppingCart } from "react-icons/fi";
 export const Features = () => (
     <section
         id="features"
-        className="container flex flex-col w-full py-32 mx-auto space-y-8"
+        className="container mx-auto flex w-full flex-col space-y-8 py-32"
     >
         {/*//!  Headings  */}
         <div className="text-center">
@@ -16,7 +16,7 @@ export const Features = () => (
 
             {/*//! Heading  */}
             <h1 className="mb-8 text-[2.9rem] font-bold">
-                <span className="underline underline-offset-8 decoration-emerald-500">
+                <span className="underline decoration-emerald-500 underline-offset-8">
                     F
                 </span>
                 eatures
@@ -28,7 +28,8 @@ export const Features = () => (
             <div className="flex items-center justify-between space-x-24 px-28">
                 <div className="flex flex-col items-start space-y-6">
                     <h1 className="text-[2.5rem] font-bold leading-snug">
-                        Affordable and Fresh Groceries Delivered Directly to Your Door
+                        Affordable and Fresh Groceries Delivered Directly to
+                        Your Door
                     </h1>
                     <p className="text-2xl text-gray-600">
                         We offer the highest quality groceries at the best
