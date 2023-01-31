@@ -167,7 +167,7 @@ export const ProductList: Product[] = [
 ];
 
 export const Products = () => (
-    <section className="w-full overflow-y-scroll">
+    <section className="w-[80%] overflow-y-scroll">
         <ProductNavbar />
 
         <div className="flex flex-col space-y-14 rounded-2xl bg-gray-100 px-10 py-11">

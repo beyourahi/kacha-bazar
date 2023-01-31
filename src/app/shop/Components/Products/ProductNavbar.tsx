@@ -5,7 +5,7 @@ import { ProductSearchBar } from "./ProductSearchBar";
 const items = 4;
 
 export const ProductNavbar = () => (
-    <nav className="sticky top-0 z-50 flex items-center justify-between space-x-10 bg-white py-6">
+    <nav className="sticky top-0 z-50 flex items-center justify-between space-x-10 bg-white py-6 px-0.5">
         <ProductSearchBar />
         <div className="flex w-[50%] justify-end space-x-6">
             {items > 0 && <CartButton items={items} />}
