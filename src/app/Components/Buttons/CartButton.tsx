@@ -14,7 +14,7 @@ export const CartButton = ({ items }: { items: number }) => {
         >
             <span>Cart</span>
             {items > 0 && (
-                <span className="px-2.5 py-[3px] ml-2 text-white rounded-full bg-emerald-500 absolute -top-[20%] -right-[10%] border-4 border-white">
+                <span className="absolute -top-[20%] -right-[10%] ml-2 rounded-full border-4 border-white bg-emerald-500 px-2.5 py-[3px] text-white">
                     {items}
                 </span>
             )}

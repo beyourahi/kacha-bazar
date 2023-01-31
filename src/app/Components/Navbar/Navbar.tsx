@@ -11,10 +11,10 @@ export const Navbar = () => {
     return (
         <div
             className={`sticky top-0 z-50 bg-white transition-all duration-500 ${
-                pos > 0 ? "shadow-2xl py-4" : "py-10"
+                pos > 0 ? "py-4 shadow-2xl" : "py-10"
             }`}
         >
-            <div className="container flex items-center justify-between mx-auto">
+            <div className="container mx-auto flex items-center justify-between">
                 {/*//! Logo  */}
                 <Logo />
 

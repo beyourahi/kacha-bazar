@@ -12,29 +12,29 @@ import { AuthorSignature } from "./AuthorSignature";
 const year = new Date().getFullYear();
 
 export const Footer = () => (
-    <footer className="bg-gray-100 mt-44">
+    <footer className="mt-44 bg-gray-100">
         <div className="container mx-auto divide-y-2 divide-gray-300">
-            <div className="flex justify-center py-32 space-x-24">
+            <div className="flex justify-center space-x-24 py-32">
                 {/*//! Branding  */}
                 <div className="flex flex-col space-y-8">
                     <Logo />
                     <div className="flex flex-col space-y-4">
-                        <p className="text-lg w-[50%]">
+                        <p className="w-[50%] text-lg">
                             Fresh groceries delivered straight to your door,
                             shop now and save time!
                         </p>
                         <div className="flex space-x-6">
                             <FaFacebookSquare
                                 size={40}
-                                className="transition-all duration-300 text-emerald-500 hover:text-emerald-600"
+                                className="text-emerald-500 transition-all duration-300 hover:text-emerald-600"
                             />
                             <FaInstagramSquare
                                 size={40}
-                                className="transition-all duration-300 text-emerald-500 hover:text-emerald-600"
+                                className="text-emerald-500 transition-all duration-300 hover:text-emerald-600"
                             />
                             <FaTwitterSquare
                                 size={40}
-                                className="transition-all duration-300 text-emerald-500 hover:text-emerald-600"
+                                className="text-emerald-500 transition-all duration-300 hover:text-emerald-600"
                             />
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export const Footer = () => (
                 {/*//! Contact Info  */}
                 <div className="flex flex-col space-y-8">
                     <h1 className="text-2xl font-bold text-gray-700">
-                        <span className="underline underline-offset-8 decoration-emerald-500">
+                        <span className="underline decoration-emerald-500 underline-offset-8">
                             Co
                         </span>
                         ntact Info
@@ -73,7 +73,7 @@ export const Footer = () => (
                 {/*//! Company */}
                 <div className="flex flex-col space-y-8">
                     <h1 className="text-2xl font-bold text-gray-700">
-                        <span className="underline underline-offset-8 decoration-emerald-500">
+                        <span className="underline decoration-emerald-500 underline-offset-8">
                             Co
                         </span>
                         mpany
@@ -89,7 +89,7 @@ export const Footer = () => (
                 {/*//! Quick Links*/}
                 <div className="flex flex-col space-y-8">
                     <h1 className="text-2xl font-bold text-gray-700">
-                        <span className="underline underline-offset-8 decoration-emerald-500">
+                        <span className="underline decoration-emerald-500 underline-offset-8">
                             Qu
                         </span>
                         ick Links
