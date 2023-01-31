@@ -7,10 +7,10 @@ import { ProductCardProps } from "types";
 export const ProductCard = ({ product }: ProductCardProps) => (
     <div
         key={product.id}
-        className="flex flex-col p-5 space-y-4 transition-all duration-300 ease-in-out bg-white group rounded-2xl drop-shadow-2xl hover:-translate-y-3.5 cursor-pointer"
+        className="group flex cursor-pointer flex-col space-y-4 rounded-2xl bg-white p-5 drop-shadow-2xl transition-all duration-300 ease-in-out hover:-translate-y-3.5"
     >
         {/*//! Image  */}
-        <div className="object-cover object-center w-full h-full overflow-hidden bg-gray-200 rounded-xl">
+        <div className="h-full w-full overflow-hidden rounded-xl bg-gray-200 object-cover object-center">
             <Image
                 src={product.image}
                 alt={product.name}

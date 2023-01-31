@@ -170,7 +170,7 @@ export const Products = () => (
     <section className="w-full overflow-y-scroll">
         <ProductNavbar />
 
-        <div className="flex flex-col px-10 bg-gray-100 space-y-14 py-11 rounded-2xl">
+        <div className="flex flex-col space-y-14 rounded-2xl bg-gray-100 px-10 py-11">
             <div className="flex items-center justify-between">
                 <h1 className="text-3xl font-bold">All Products</h1>
                 <SortBy />
